@@ -11,3 +11,9 @@ test.each([
   const actual = convertWeight(a);
   expect(actual).toEqual(expected);
 });
+
+test("Make sure the argument is positive", () => {
+    const actual = convertWeight(-5);
+    const expected = "Make sure your number is a positive integer";
+    expect(actual).toEqual(expected);
+})
